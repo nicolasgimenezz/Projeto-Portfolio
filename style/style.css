@@ -1,0 +1,64 @@
+@charset "UTF-8";   
+
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Open+Sans&family=PT+Sans&family=Source+Serif+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0px;
+}
+
+body {
+    background-color: #eee;
+}
+
+nav {
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    position: fixed;
+    text-align: right;
+}
+
+h1 {
+    padding: 140px;
+    font-size: 50px;
+    text-align: center;
+}
+
+p {
+    padding: 18px;
+    font-size: 35px;
+}
+ul {
+    
+}
+
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    line-height: 70px;
+    
+}
+
+.br {
+   
+}
+
+.moved {
+    transform: translate(
+        -179px
+    );
+}
+ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding:  0 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+a:hover {
+    background-color: rgb(56, 54, 54);
+}

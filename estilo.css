@@ -1,0 +1,277 @@
+@charset "UTF-8"
+
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Open+Sans&family=PT+Sans&family=Russo+One&family=Source+Serif+Pro&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Open+Sans&family=PT+Sans&family=Press+Start+2P&family=Source+Serif+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 100%;
+     /*background: linear-gradient(68.15deg, #5E3FA6 16.62%, #B08FFF 85.61%); */
+     background-color: #5E3FA6;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    background-color: #5E3FA6;  
+    
+    
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px 0px;
+    border-bottom: 2px solid #00000083;
+    
+}
+
+.cabecalho-imagem {
+    height: 72px;
+    margin-left: -50px;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 45px;
+}
+
+.cabecalho-menu a::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid #bd9fc9;
+    margin-top: 5px;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.cabecalho-menu a:hover::after {
+    transform: scaleX(1);
+
+}
+
+.cabecalho-menu-item {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffff;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+#inicio {
+    border-top: 0.4px solid rgb(34, 0, 43);
+    background-color: white;
+}
+
+.inicio-principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 390px;
+    width: -200px;
+    height: 870px;
+    font-family: 'Russo One', sans-serif;
+
+}
+
+.inicio-principal-escrito {
+    display: inline-block;
+    flex-direction: column;
+
+}
+
+.inicio-principal-escrito1{
+    font-size: 25px;    
+    font-family: 'Russo One', sans-serif;
+    padding-bottom: 18px;
+
+}
+
+
+
+/* .inicio-principal-escrito-titulo {
+    display: flex;
+    font-size: 50px;
+    padding-bottom: 18px;
+} */
+.principal {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Russo One', sans-serif;
+    padding-bottom: 18px;
+}
+
+
+.principal::after{
+    content: '|';
+    margin-left: 5px;
+    opacity: 0.6;
+    animation: pisca .7s infinite;
+}
+
+@keyframes pisca {
+    0%, 100% {
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+
+}
+
+
+.inicio-principal-escrito-subtitulo {
+    font-size: 25px;
+    padding-bottom: 25px;
+}
+
+
+.btn {
+    font-size: 25px;
+    color: white;
+    background-color: #5E3FA6;
+    width: 312px; /* antes era 180px */
+    height: 60px;
+    border: none;
+    border-radius: 29px;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.26);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+
+
+.btn:hover {
+    background-color: #9D9AAF;
+    color: black;
+    
+}
+
+
+.inicio-imagem {
+    border-radius: 100%;
+    height: 430px;
+}
+
+#sobre {
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    text-align: center;
+    margin-top: 100px;
+    justify-content: center;
+    background-color: #5E3FA6;
+}
+
+.sobre-titulo {
+    color: white;
+    font-size: 50px;
+    font-family: 'Russo One', sans-serif;
+    margin-top: 50px;
+}
+
+.sobre-conteudo {
+    color: #cfbef5;
+    display: inline-block;
+    width: 35%;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+ 
+#projetos {
+    display: flex;
+    
+    flex-direction: column;
+    padding: 100px;
+    text-align: center;
+    margin-top: 100px;
+
+    justify-content: center;
+
+}
+
+.projeto {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    width: -200px;
+    height: 500px;
+    font-family: 'Russo One', sans-serif;
+    
+}
+
+
+.projetos-titulo {
+    margin-top: 50px;
+    font-size: 55px;
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+
+} 
+
+.projeto-img {
+    border-bottom: 5px solid #5E3FA6;
+    width: 100%;
+    transition: 0.5s;
+  }
+  
+  .projeto-img:hover {
+    transform: scale(110%);
+    border-bottom: 5px solid #9D9AAF;
+  }
+  
+.projetos-github {
+    font-size: 25px;
+    font-family: 'Russo One', sans-serif;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px
+}
+
+.projetos-github:hover{
+    color: black;
+}
+
+#footer {
+    text-align: center;
+    color: white;
+}
+.footer1 {
+    font-family: 'Press Start 2P', cursive;
+    display: block;
+    margin-block-start: 1.5em;
+    margin-block-end: 1.5em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.footer1 a {
+    color: white;
+}
+
+.footer1 a:hover {
+    color: #9D9AAF;
+}
