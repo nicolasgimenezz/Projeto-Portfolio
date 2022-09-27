@@ -21,23 +21,24 @@
     
 }
 
+
+
+
+
+
 @media (max-width: 600px) {
     .footer1{
         font-size: 0.8em;
 
     }
-}
-
-@media (max-width: 600px)  {
     .bloco > .inicio-imagem {
         margin-top: 15%;
         margin-left: -30px;
-        height: 25%;    
+        height: 350px;
     } 
-
-    
-
 }
+
+
 
 
 * {
