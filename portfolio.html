@@ -12,6 +12,7 @@
     <header class="cabecalho">
         <a href="#"><img class="cabecalho-imagem" src="imagens/Nf.png" alt="Logo"></a>
         <nav class="cabecalho-menu"> 
+            
             <a class="cabecalho-menu-item" href="#inicio">Início</a>
             <a class="cabecalho-menu-item" href="#sobre">Sobre mim</a>
             <a class="cabecalho-menu-item" href="#projetos">Projetos</a>
@@ -22,40 +23,43 @@
 
     <main id="inicio">
         <section class="inicio-principal">
-            <div class="inicio-principal-escrito">
-                <h2 class="inicio-principal-escrito1">Oi, eu sou</h2>
-
-                <h1 class="principal">Nicolas Gimenez</h1>
-                <script> 
-                
-                    function typeWriter(elemento) {
-                        const textoArray = elemento.innerHTML.split('');
-                        elemento.innerHTML ='';
-                        textoArray.forEach((letra, i) => {
-                            setTimeout(() => elemento.innerHTML += letra, 75 * i);
-                        });
-                    }
-
-                    const titulo = document.querySelector('h1')
-                    typeWriter(titulo);
+            <div class="container">
+                    <div class="bloco">
+                        <h2 class="inicio-principal-escrito1">Oi, eu sou</h2>
+                        <h1 class="principal">Nicolas Gimenez</h1>
+                                       <!-- <h1 class="principal">Nicolas Gimenez</h1> -->
+                        
+                        <script>
+                        
+                            function typeWriter(elemento) {
+                                const textoArray = elemento.innerHTML.split('');
+                                elemento.innerHTML ='';
+                                textoArray.forEach((letra, i) => {
+                                    setTimeout(() => elemento.innerHTML += letra, 75 * i);
+                                });
+                            }
+                            const titulo = document.querySelector('h1')
+                            typeWriter(titulo);
+                        
+                        
+                        </script>
+                        
+                        
+                        <h2 class="inicio-principal-escrito-subtitulo">Desenvolvedor Front End</h2>
+                        
+                        
                     
-                   
-                </script>
-                <!-- <h1 class="inicio-principal-escrito-titulo"> Nicolas Gimenez</h1> -->
-
-
-                <h2 class="inicio-principal-escrito-subtitulo">Desenvolvedor Front End</h2>
-
-
-               <!-- <button class="inicio-principal-escrito-botao"> <a class="inicio-principal-botao-letra" href="https://www.linkedin.com/in/nicolas-emanuel-gimenez-a30552249/" target="_blank">Linkedin</a></button>
-                -->
-                <div>
-                    <a href="https://www.linkedin.com/in/nicolas-emanuel-gimenez-a30552249/" class="btn" target="_blank"> Linkedin</a>
-                </div>
+                        
+                        <a href="https://www.linkedin.com/in/nicolas-emanuel-gimenez-a30552249/" class="btn" target="_blank"> Linkedin</a>
+                        
+                    </div>    
+                    <div class="bloco">
+                        <img class="inicio-imagem" src="imagens/Nicolas.PNG" alt="">
+                    </div>
             
-            </div>
-            <div class="direita">
-                <a href=""><img class="inicio-imagem" src="imagens/Nicolas.PNG" alt="Minha imagem"></a>
+            
+                    
+                
             </div>
         </section>
 
@@ -66,12 +70,12 @@
                 
                 
                 <p class="sobre-conteudo">
-                    Meu nome é Nicolas Gimenez e eu sou um apaixonado por tecnologia que decidiu trilhar o caminho da programação. Atualmente estou focando nas tecnologias voltadas ao FrontEnd. 
+                    Meu nome é Nicolas Gimenez e estou trilhando meu <br> caminho na programação.  Atualmente <br> estou focando nas tecnologias voltadas ao FrontEnd. 
                     <br>
                     <br>
                     
                     
-                    Hoje entendo tecnologias como HTML, CSS e JavaScript
+                    Hoje entendo tecnologias como HTML, CSS e JavaScript.
                
                     
         </section>
@@ -91,7 +95,7 @@
                 </div>
 
                     <div>
-                        <a href="https://github.com/nicolasgimenezz" target="_blank" class="projetos-github">Repositórios no Github</a>
+                        <a href="https://github.com/nicolasgimenezz" target="_blank" class="projetos-github">Repositório no Github</a>
                     </div>
                 
         </section>
@@ -102,5 +106,9 @@
     <footer id="footer">
         <p class="footer1">Desenvolvido por <a href="">Nicolas Gimenez</a> </p>
     </footer>
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 </html>
