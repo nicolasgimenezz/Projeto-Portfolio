@@ -6,7 +6,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Arimo&family=Open+Sans&family=PT+Sans&family=Press+Start+2P&family=Source+Serif+Pro&display=swap');
 
-@media (max-width: 600px) {
+@media (max-width: 1222px) {
     section#sobre> p {
         display: inline-block;
         width: 100%;
@@ -18,25 +18,33 @@
         font-size: 1.5em;
         
     }
-    
-}
-
-
-
-
-
-
-@media (max-width: 600px) {
     .footer1{
         font-size: 0.8em;
 
     }
+
+    
     .bloco > .inicio-imagem {
         margin-top: 15%;
-        margin-left: -30px;
         height: 350px;
     } 
+
+    .container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+
 }
+
+    
+
+
+
+
+
+
 
 
 
@@ -114,21 +122,7 @@ header {
     align-items: center;
     
 }
-@media (max-width: 600px)  {
-    .container {
-        display: block;
-        align-items: center;
-    } 
 
-    .bloco {
-    }
-    
-
-}
-
-.bloco {
-    
-}
 
 
 
@@ -183,6 +177,9 @@ header {
     50%{
         opacity: 0;
     }
+    
+
+
 
 }
 
@@ -218,7 +215,8 @@ header {
 
 .inicio-imagem {
     border-radius: 100%;
-    height: 420px;
+    /* height: 420px; */
+    
     
 }
 /* .inicio-imagem {
