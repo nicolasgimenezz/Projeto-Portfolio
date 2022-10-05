@@ -5,21 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/estilo.css">
+    <script defer src="app.js"></script>
     <link rel="shortcut icon" href="imagens/nd.png" type="image/x-icon">
     <title>Portfólio</title>
 </head>
 <body>
-    <header class="cabecalho">
-        <a href="#"><img class="cabecalho-imagem" src="imagens/Nf.png" alt="Logo"></a>
+
+
+   <header class="cabecalho">
+    <nav class="navbar">
+        <a href="#" class="nav-img"><img src="imagens/Nf.png" alt="Logo"></a>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Sobre mim</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Projetos</a>
+            </li>
+        </ul>
+
+        <div class="hamburger">
+
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        
+        </div>   
+    </nav>
+     <!--   <a href="#"><img class="cabecalho-imagem" src="imagens/Nf.png" alt="Logo"></a>
         <nav class="cabecalho-menu"> 
-            
             <a class="cabecalho-menu-item" href="#inicio">Início</a>
             <a class="cabecalho-menu-item" href="#sobre">Sobre mim</a>
             <a class="cabecalho-menu-item" href="#projetos">Projetos</a>
             
         </nav>
+    -->
     </header>
-
+   
 
     <main id="inicio">
         <section class="inicio-principal">
@@ -107,8 +132,6 @@
         <p class="footer1">Desenvolvido por <a href="">Nicolas Gimenez</a> </p>
     </footer>
     
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
