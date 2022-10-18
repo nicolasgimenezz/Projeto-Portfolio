@@ -58,16 +58,15 @@
 {
     .projeto {
         flex-direction: column;
-        width: 100%;
+        width: 70%;
         margin: auto;
     }
     .projetos-titulo {
-        margin-bottom: 100px;
+        margin-bottom: 85px;
     
     } 
-    
-    .projetogit{
-        margin-top: 100px;
+    .projetogit {
+        padding-top: 85px;
     }
     
 
@@ -364,15 +363,14 @@ h1::after {
     text-align: center;
     margin-top: 100px;
     justify-content: center;
-    /*background-color: #5E3FA6;*/
-    background-color: #3fa64d;
+    background-color: #5E3FA6;
 }
 
 .sobre-titulo {
     color: white;
     font-size: 50px;
     font-family: 'Russo One', sans-serif;
-    margin-top: 50px;
+    padding-top: 85px;
 }
 
 .sobre-conteudo {
@@ -385,14 +383,14 @@ h1::after {
     
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
-    margin-bottom: 50px;
+    padding-bottom: 85px;
     line-height: 2em;
 }
  
 #projetos {
     display: flex;
     flex-direction: column;
-    padding: 100px;
+    padding: 50px;
     text-align: center;
 
     justify-content: center;
