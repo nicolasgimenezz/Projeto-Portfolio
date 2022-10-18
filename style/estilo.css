@@ -365,7 +365,7 @@ h1::after {
     margin-top: 100px;
     justify-content: center;
     /*background-color: #5E3FA6;*/
-    *background-color: #3fa64d;
+    background-color: #3fa64d;
 }
 
 .sobre-titulo {
